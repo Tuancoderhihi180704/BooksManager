@@ -1,6 +1,6 @@
 // config/db.js
 const mongoose = require('mongoose');
-require('dotenv').config(); // 🔥 Phải có dòng này nếu chưa được load ở đây
+require('dotenv').config(); 
 
 const connectDB = async () => {
   try {
@@ -8,7 +8,7 @@ const connectDB = async () => {
     console.log(`✅ Đã kết nối MongoDB: ${conn.connection.host}`);
   } catch (error) {
     console.error('❌ Lỗi kết nối MongoDB:', error.message);
-    process.exit(1); // Thoát process nếu lỗi
+    process.exit(1); 
   }
 };
 
